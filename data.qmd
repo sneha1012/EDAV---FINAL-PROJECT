@@ -2,4 +2,34 @@
 
 ## Description
 
+The dataset used in this analysis is sourced from [UN Data](https://data.un.org), specifically focusing on migration and refugee statistics. This dataset provides a detailed view of global migration trends, including the number of international migrants, refugees, asylum seekers, and other populations of concern, categorized by region and year.
+
+### Key Details:
+
+- **Source**: [UN Data - Migration and Refugee Statistics](https://data.un.org)
+- **Data Format**: Comma-separated values (CSV).
+- **Size and Dimensions**:
+  - **Rows**: 7,239
+  - **Columns**: 7 (`region_country_area`, `year`, `series`, `value`, etc.)
+- **Variables**:
+  - `region_country_area`: The geographic region or country being analyzed.
+  - `year`: Year of data collection (e.g., 2005, 2010, 2015).
+  - `series`: The category of data (e.g., "Total Refugees," "Asylum Seekers").
+  - `value`: Numeric value for the given metric and year.
+  - `footnotes` and `source`: Additional information about the data.
+
+### Challenges:
+
+- **Missing Values**: A significant proportion of rows have missing values in key columns, such as `value`.
+- **Inconsistent Formatting**: Numeric fields include commas, requiring cleaning and conversion.
+- **Multiple Categories per Region/Year**: The `series` column creates a challenge for reshaping the dataset for analysis.
+
+The cleaned version of this dataset, prepared using R, addresses these issues by:
+1. Replacing missing values with zero for numerical analysis while preserving a log of missing patterns.
+2. Standardizing numeric fields by removing commas.
+3. Reshaping the data to ensure categories (e.g., "Refugees," "Asylum Seekers") are in separate columns.
+
 ## Missing value analysis
+<!-- 
+Code and explanations for missing value analysis.
+-->

@@ -2,22 +2,41 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "YOUR PROJECT TITLE",
+    "title": "Migration and Refugee Populations analysis Over Time",
     "section": "",
-    "text": "1 Introduction"
+    "text": "1 Introduction\nMigration and refugee statistics offer a unique lens into the intricate dynamics of our ever-changing global landscape. In a world shaped by geopolitical shifts, climate change, economic disparity, and conflict, understanding these statistics is critical not only for policymakers but also for global citizens seeking to grasp the challenges and opportunities of international migration.\nThis project delves into comprehensive migration data to uncover meaningful insights and address pressing questions. How has the global movement of people evolved over the years? Which regions are most impacted by refugee movements, and what underlying factors drive these trends? Are there disparities in migration and refugee patterns based on gender or geographic regions? These are just a few of the questions we aim to answer through this study.\nMigration and displacement are not just numbers—they represent individuals, families, and communities seeking safety, opportunity, or a better future. By analyzing this data, we hope to shed light on global patterns, identify regions of high migration pressure, and provide data-driven evidence to inform humanitarian responses and policy interventions.\nThis topic is more than just a statistical analysis; it is a story of resilience, hope, and humanity. By addressing data gaps, visualizing trends, and contextualizing the numbers, we aim to empower readers to better understand the profound implications of migration and refugee movements in shaping the future of our interconnected world.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "2  Data",
+    "section": "",
+    "text": "2.1 Description\nThe dataset used in this analysis is sourced from UN Data, specifically focusing on migration and refugee statistics. This dataset provides a detailed view of global migration trends, including the number of international migrants, refugees, asylum seekers, and other populations of concern, categorized by region and year.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
+    ]
   },
   {
     "objectID": "data.html#description",
     "href": "data.html#description",
     "title": "2  Data",
-    "section": "2.1 Description",
-    "text": "2.1 Description"
+    "section": "",
+    "text": "2.1.1 Key Details:\n\nSource: UN Data - Migration and Refugee Statistics\nData Format: Comma-separated values (CSV).\nSize and Dimensions:\n\nRows: 7,239\nColumns: 7 (region_country_area, year, series, value, etc.)\n\nVariables:\n\nregion_country_area: The geographic region or country being analyzed.\nyear: Year of data collection (e.g., 2005, 2010, 2015).\nseries: The category of data (e.g., “Total Refugees,” “Asylum Seekers”).\nvalue: Numeric value for the given metric and year.\nfootnotes and source: Additional information about the data.\n\n\n\n\n2.1.2 Challenges:\n\nMissing Values: A significant proportion of rows have missing values in key columns, such as value.\nInconsistent Formatting: Numeric fields include commas, requiring cleaning and conversion.\nMultiple Categories per Region/Year: The series column creates a challenge for reshaping the dataset for analysis.\n\nThe cleaned version of this dataset, prepared using R, addresses these issues by: 1. Replacing missing values with zero for numerical analysis while preserving a log of missing patterns. 2. Standardizing numeric fields by removing commas. 3. Reshaping the data to ensure categories (e.g., “Refugees,” “Asylum Seekers”) are in separate columns.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
+    ]
   },
   {
     "objectID": "data.html#missing-value-analysis",
     "href": "data.html#missing-value-analysis",
     "title": "2  Data",
     "section": "2.2 Missing value analysis",
-    "text": "2.2 Missing value analysis"
+    "text": "2.2 Missing value analysis",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
+    ]
   }
 ]

@@ -6,11 +6,11 @@ execute:
   echo: true
 
 book:
-  title: "YOUR PROJECT TITLE"
+  title: "Migration and Refugee Populations analysis Over Time"
   author:
-    - AUTHOR1 (UNI1)
-    - AUTHOR2 (UNI2)
-  repo-url: https://github.com/YOUR_GITHUB_ACCOUNT/REPO_NAME
+    - Sneha Maurya (sm5755)
+    - Zubair Atha (za2366)
+  repo-url: https://github.com/sneha1012/EDAV-FINAL-PROJECT.git
   date: today
   page-footer:
     right: |
