@@ -7,4 +7,4 @@ This project delves into comprehensive migration data to uncover meaningful insi
 
 Migration and displacement are not just numbers—they represent individuals, families, and communities seeking safety, opportunity, or a better future. By analyzing this data, we hope to shed light on global patterns, identify regions of high migration pressure, and provide data-driven evidence to inform humanitarian responses and policy interventions. 
 
-This topic is more than just a statistical analysis; it is a story of resilience, hope, and humanity. By addressing data gaps, visualizing trends, and contextualizing the numbers, we aim to empower readers to better understand the profound implications of migration and refugee movements in shaping the future of our interconnected world.
+This topic goes beyond mere statistical analysis; it is a narrative of resilience, hope, and humanity. By bridging data gaps, illustrating trends, and providing context to the numbers, we strive to equip readers with a deeper understanding of the significant impact migration and refugee movements have on the future of our interconnected world.
