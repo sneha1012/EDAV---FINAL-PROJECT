@@ -154,7 +154,16 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#key-details" id="toc-key-details" class="nav-link" data-scroll-target="#key-details"><span class="header-section-number">2.1.1</span> Key Details:</a></li>
   <li><a href="#challenges" id="toc-challenges" class="nav-link" data-scroll-target="#challenges"><span class="header-section-number">2.1.2</span> Challenges:</a></li>
   </ul></li>
-  <li><a href="#missing-value-analysis" id="toc-missing-value-analysis" class="nav-link" data-scroll-target="#missing-value-analysis"><span class="header-section-number">2.2</span> Missing value analysis</a></li>
+  <li><a href="#missing-value-analysis" id="toc-missing-value-analysis" class="nav-link" data-scroll-target="#missing-value-analysis"><span class="header-section-number">2.2</span> Missing Value Analysis</a>
+  <ul class="collapse">
+  <li><a href="#process-of-analysis" id="toc-process-of-analysis" class="nav-link" data-scroll-target="#process-of-analysis"><span class="header-section-number">2.2.1</span> Process of Analysis</a></li>
+  <li><a href="#patterns-observed" id="toc-patterns-observed" class="nav-link" data-scroll-target="#patterns-observed"><span class="header-section-number">2.2.2</span> Patterns Observed</a></li>
+  <li><a href="#visualizations" id="toc-visualizations" class="nav-link" data-scroll-target="#visualizations"><span class="header-section-number">2.2.3</span> Visualizations</a></li>
+  <li><a href="#percentage-of-missing-values-per-column" id="toc-percentage-of-missing-values-per-column" class="nav-link" data-scroll-target="#percentage-of-missing-values-per-column"><span class="header-section-number">2.2.4</span> Percentage of Missing Values per Column</a></li>
+  <li><a href="#commentary-graph-2---population-vise-missing-value." id="toc-commentary-graph-2---population-vise-missing-value." class="nav-link" data-scroll-target="#commentary-graph-2---population-vise-missing-value."><span class="header-section-number">2.2.5</span> Commentary: Graph 2 - population vise missing value.</a></li>
+  <li><a href="#commentary-graph-2---matrix-represention-for-missing-value-pattern" id="toc-commentary-graph-2---matrix-represention-for-missing-value-pattern" class="nav-link" data-scroll-target="#commentary-graph-2---matrix-represention-for-missing-value-pattern"><span class="header-section-number">2.2.6</span> Commentary: Graph 2 - Matrix Represention for missing value pattern</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">2.2.7</span> Conclusion</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/sneha1012/EDAV-FINAL-PROJECT.git/edit/main/data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sneha1012/EDAV-FINAL-PROJECT.git/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -214,12 +223,78 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 <section id="missing-value-analysis" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="missing-value-analysis"><span class="header-section-number">2.2</span> Missing value analysis</h2>
-<!-- 
-Code and explanations for missing value analysis.
--->
+<h2 data-number="2.2" class="anchored" data-anchor-id="missing-value-analysis"><span class="header-section-number">2.2</span> Missing Value Analysis</h2>
+<section id="process-of-analysis" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="process-of-analysis"><span class="header-section-number">2.2.1</span> Process of Analysis</h3>
+<p>To analyze missing values in our dataset, we followed these steps: 1. Identified the variables with missing data using summary statistics and visualizations. 2. Visualized the patterns of missing data across variables and years to detect trends or anomalies. 3. Analyzed the impact of missing data on key variables such as <code>value</code>, which includes refugee counts and other demographic information. 4. Proposed strategies for handling missing data, such as imputation or exclusion, depending on the observed patterns.</p>
+</section>
+<section id="patterns-observed" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="patterns-observed"><span class="header-section-number">2.2.2</span> Patterns Observed</h3>
+<p>Our analysis revealed the following patterns in missing data: - The variable <code>value</code> exhibited a significant proportion of missing data, particularly in certain categories such as <code>Asylum Seekers</code>. - Missing data varied by year, with older records (e.g., 2005) having more missing values compared to recent records (e.g., 2020). - Regional data was more complete for high-income countries but less so for low-income and conflict-affected regions.</p>
+</section>
+<section id="visualizations" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="visualizations"><span class="header-section-number">2.2.3</span> Visualizations</h3>
+</section>
+<section id="percentage-of-missing-values-per-column" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="percentage-of-missing-values-per-column"><span class="header-section-number">2.2.4</span> Percentage of Missing Values per Column</h3>
+<p>This analysis identifies the proportion of missing values for each column in the dataset to understand which variables have significant data gaps.</p>
+<pre><code># Load necessary libraries
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+# Ensure data is loaded properly
+data &lt;- read.csv("path_to_your_cleaned_csv_file.csv")
+
+# Calculate the percentage of missing values per column
+missing_values &lt;- data |&gt;
+  summarise(across(everything(), ~ sum(is.na(.)))) 
+  pivot_longer(everything(), names_to = "Column", values_to = "Missing") |&gt;
+  mutate(Percentage = (Missing / nrow(data)) * 100)
+
+# Bar plot of missing values
+ggplot(missing_values, aes(x = reorder(Column, -Percentage), y = Percentage)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  coord_flip() +
+  labs(title = "Percentage of Missing Values per Column", 
+       x = "Columns", 
+       y = "Percentage of Missing Values") +
+  theme_minimal()</code></pre>
+<p><img src="Graphs/graph1.png" class="img-fluid"></p>
+<pre><code># Create missing value matrix
+missing_matrix &lt;- is.na(data) 
+  as.data.frame() |&gt;
+  mutate(row_id = 1:n()) |&gt;
+  pivot_longer(-row_id, names_to = "Variable", values_to = "Missing")
+
+# Create the plot
+ggplot(missing_matrix, aes(x = Variable, y = row_id)) +
+  geom_tile(aes(fill = Missing)) +
+  scale_fill_manual(values = c("steelblue", "red"), 
+                   labels = c("Present", "Missing"),
+                   name = "Value Status") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  coord_flip() +
+  labs(x = "Variables", 
+       y = "Observation Number",
+       title = "Missing Value Pattern Matrix")</code></pre>
+</section>
+<section id="commentary-graph-2---population-vise-missing-value." class="level3" data-number="2.2.5">
+<h3 data-number="2.2.5" class="anchored" data-anchor-id="commentary-graph-2---population-vise-missing-value."><span class="header-section-number">2.2.5</span> Commentary: Graph 2 - population vise missing value.</h3>
+<p>The bar chart shows the proportion of missing values in each column. The Other of concern to UNHCR (number) column has the highest missing percentage (~45%), followed by Asylum seekers, including pending cases (number) and Total refugees and people in refugee-like situations (number). Core variables such as Year and Region/Country/Area exhibit no missing values, ensuring consistent contextual data. The variability in missing values suggests potential issues in data collection across regions and categories, necessitating targeted imputation or exclusion strategies.</p>
+<p><img src="Graphs/graph2.png" class="img-fluid"></p>
+</section>
+<section id="commentary-graph-2---matrix-represention-for-missing-value-pattern" class="level3" data-number="2.2.6">
+<h3 data-number="2.2.6" class="anchored" data-anchor-id="commentary-graph-2---matrix-represention-for-missing-value-pattern"><span class="header-section-number">2.2.6</span> Commentary: Graph 2 - Matrix Represention for missing value pattern</h3>
+<p>The matrix visualization reveals that missing values (red) occur systematically in some columns, notably Other of concern to UNHCR (number) and Asylum seekers, including pending cases (number). Variables such as Region/Country/Area and Year remain complete (blue), providing reliable context for analysis. The clustering of missing values across observations indicates potential issues with data collection in specific time periods or regions.</p>
+</section>
+<section id="conclusion" class="level3" data-number="2.2.7">
+<h3 data-number="2.2.7" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">2.2.7</span> Conclusion</h3>
+<p>The analysis of missing data indicates that it is unevenly distributed across variables, years, and regions. To ensure the reliability of our insights: - Missing values in critical variables (e.g., <code>value</code>) will be imputed using appropriate methods (e.g., mean/mode imputation). - For variables or years with excessive missing data, we may exclude them from analysis to avoid introducing bias.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
