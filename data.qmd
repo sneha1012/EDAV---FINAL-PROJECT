@@ -116,8 +116,7 @@ The clustering of missing values across observations indicates potential issues 
 
 ### Conclusion
 
-The analysis of missing data indicates that it is unevenly distributed across variables, years, and regions. To ensure the reliability of our insights:
-- Missing values in critical variables (e.g., `value`) will be imputed using appropriate methods (e.g., mean/mode imputation).
-- For variables or years with excessive missing data, we may exclude them from analysis to avoid introducing bias.
-
+The examination of missing data reveals an uneven distribution across variables, years, and regions. To maintain the reliability of our findings:  
+- Missing values in key variables (e.g., `value`) will be addressed using suitable techniques such as mean or mode imputation.  
+- Variables or years with substantial missing data may be excluded from the analysis to minimize the risk of bias.  
 
