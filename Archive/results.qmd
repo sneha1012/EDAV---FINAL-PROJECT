@@ -1,7 +1,6 @@
-# Results
+# Chapter - Results
 
-## ![Scatter Plot Analysis: Gender Distribution in Migration ](Graphs/Scatter.png)
-
+## ![Scatter Plot Analysis: Gender Distribution in Migration ](Scatter.png)
 
 This scatter plot examines the relationship between male and female international migrant stocks as a percentage of the total population. It provides insight into the gender distribution of migration patterns across different years.
 
@@ -15,8 +14,7 @@ This scatter plot examines the relationship between male and female internationa
 3. **Outliers**:  
    Some points deviate significantly from the equality line, representing countries where the proportion of male and female migrants is imbalanced. These outliers likely reflect specific geopolitical or cultural factors influencing gendered migration patterns.
 
-## ![Bar Chart: Regional Distribution of Populations of Concern](Graphs/Bar.png)
-
+## ![Bar Chart: Regional Distribution of Populations of Concern](Bar.png)
 
 This bar chart presents the total population of concern to the UNHCR across the top 10 regions, ranked by their respective values. The visualization highlights significant contributors, aiding in targeted analysis and resource allocation.
 
@@ -35,9 +33,7 @@ This bar chart presents the total population of concern to the UNHCR across the 
 - **Ease of Interpretation**:  
    Precise numerical labels and organized rankings enhance clarity and usability.
 
-## ![Choropleth Map: Global Distribution of Asylum Seekers](Graphs/Chloro.png)
-
-
+## ![Choropleth Map: Global Distribution of Asylum Seekers](Chloro.png)
 
 The map is a visually appealing and accurate representation of the global distribution of asylum seekers. The gradient color scheme from blue to red effectively highlights regions with varying magnitudes of asylum seekers. The map provides a clear and intuitive understanding of the data.
 
@@ -54,8 +50,7 @@ The map is a visually appealing and accurate representation of the global distri
 
 
 
-## ![Ridgeline Plot: Normalized Refugee Numbers by Region](Graphs/Ridge.png)
-
+## ![Ridgeline Plot: Normalized Refugee Numbers by Region](Ridge.png)
 
 The ridgeline plot visualizes the normalized refugee numbers across different regions.
 
@@ -68,8 +63,7 @@ The ridgeline plot visualizes the normalized refugee numbers across different re
    Regions such as Uganda and Iran exhibit lower normalized refugee numbers.
 
 
-## ![Boxplot: Distribution of International Migrant Stock](Graphs/Box.png)
-
+## ![Boxplot: Distribution of International Migrant Stock](Box.png)
 
 This boxplot visualizes the distribution of international migrant stock (both sexes, in numbers), as given in our dataset across different years, using a logarithmic scale for better clarity. The following insights can be drawn:
 
@@ -83,8 +77,7 @@ This boxplot visualizes the distribution of international migrant stock (both se
 3. **Central Tendencies**:  
    The dashed green line connecting medians shows consistent trends over time.
 
-## ![Histogram: Proportion of Migrants in Total Population](Graphs/Hist.png)
-
+## ![Histogram: Proportion of Migrants in Total Population](Hist.png)
 
 This histogram shows the distribution of international migrant stock as a percentage of the total population.
 
@@ -94,8 +87,7 @@ This histogram shows the distribution of international migrant stock as a percen
 2. **Density Overlay**:  
    The concentration of values at the lower end highlights the relatively low proportion of migration in most countries.
 
-## ![Q-Q Plot: Distribution Analysis of Migrant Stock](Graphs/QQ.png)
-
+## ![Q-Q Plot: Distribution Analysis of Migrant Stock](QQ.png)
 
 The Q-Q plot compares the distribution of international migrant stock to a theoretical normal distribution.
 
@@ -105,7 +97,7 @@ The Q-Q plot compares the distribution of international migrant stock to a theor
 - **Shapiro-Wilk Normality Test**:  
    The test result (W = 0.68905, p-value < 2.2e-16) confirms that the data is not normally distributed.
 
-## ![Scatter Plot: Migrant Stock vs. Refugee Population](Graphs/Scatterplot2.png)
+## ![Scatter Plot: Migrant Stock vs. Refugee Population](Scatterplot2.png)
 
 This scatterplot examines the relationship between international migrant stock and total refugee population.
 
@@ -116,12 +108,11 @@ This scatterplot examines the relationship between international migrant stock a
    A few countries with extremely high migrant or refugee populations deviate significantly, suggesting unique roles in global migration.
 
 
-## ![Parallel Coordinates Plot: Migration Metrics](Graphs/Parcoords.png)
+## ![Parallel Coordinates Plot: Migration Metrics](Parcoords.png)
 
 This parallel coordinates plot visualizes normalized values of migration metrics (Migrant Stock, Total Refugees, and Asylum Seekers) for the top 10 countries. The lines show significant variability across metrics for different countries. For example, some regions like "Northern America" and "United States of America" have high migrant stock but relatively lower refugee populations. Conversely, regions like "Africa" and "Asia" show higher refugee numbers but lower migrant stocks. This highlights the differing roles countries play in migration dynamics—some as destinations for migrants and others as hosts for refugees.
 
-## ![ Heatmap: Overview of Migration Metrics](Graphs/Heatmap.png)
-
+## ![ Heatmap: Overview of Migration Metrics](Heatmap.png)
 
 The heatmap highlights migration metrics across the top 10 countries/regions using darker shades to indicate higher values.
 

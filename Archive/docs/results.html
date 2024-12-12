@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Migration and Refugee Populations analysis Over Time - 2&nbsp; Data</title>
+<title>Migration and Refugee Populations analysis Over Time - 3&nbsp; Chapter - Results</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./results.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./d3graph.html" rel="next">
+<link href="./data.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./results.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter - Results</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -117,13 +117,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data.html" class="sidebar-item-text sidebar-link active">
+  <a href="./data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./results.html" class="sidebar-item-text sidebar-link">
+  <a href="./results.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter - Results</span></span></a>
   </div>
 </li>
@@ -149,30 +149,53 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#description" id="toc-description" class="nav-link active" data-scroll-target="#description"><span class="header-section-number">2.1</span> Description</a>
+  <li><a href="#scatter-plot-analysis-gender-distribution-in-migration" id="toc-scatter-plot-analysis-gender-distribution-in-migration" class="nav-link active" data-scroll-target="#scatter-plot-analysis-gender-distribution-in-migration"><span class="header-section-number">3.1</span> <img src="Scatter.png" class="img-fluid" alt="Scatter Plot Analysis: Gender Distribution in Migration"></a>
   <ul class="collapse">
-  <li><a href="#key-details" id="toc-key-details" class="nav-link" data-scroll-target="#key-details"><span class="header-section-number">2.1.1</span> Key Details:</a></li>
-  <li><a href="#challenges" id="toc-challenges" class="nav-link" data-scroll-target="#challenges"><span class="header-section-number">2.1.2</span> Challenges:</a></li>
+  <li><a href="#key-observations" id="toc-key-observations" class="nav-link" data-scroll-target="#key-observations"><span class="header-section-number">3.1.1</span> Key Observations:</a></li>
   </ul></li>
-  <li><a href="#missing-value-analysis" id="toc-missing-value-analysis" class="nav-link" data-scroll-target="#missing-value-analysis"><span class="header-section-number">2.2</span> Missing Value Analysis</a>
+  <li><a href="#bar-chart-regional-distribution-of-populations-of-concern" id="toc-bar-chart-regional-distribution-of-populations-of-concern" class="nav-link" data-scroll-target="#bar-chart-regional-distribution-of-populations-of-concern"><span class="header-section-number">3.2</span> <img src="Bar.png" class="img-fluid" alt="Bar Chart: Regional Distribution of Populations of Concern"></a>
   <ul class="collapse">
-  <li><a href="#process-of-analysis" id="toc-process-of-analysis" class="nav-link" data-scroll-target="#process-of-analysis"><span class="header-section-number">2.2.1</span> Process of Analysis</a></li>
-  <li><a href="#patterns-observed" id="toc-patterns-observed" class="nav-link" data-scroll-target="#patterns-observed"><span class="header-section-number">2.2.2</span> Patterns Observed</a></li>
-  <li><a href="#visualizations" id="toc-visualizations" class="nav-link" data-scroll-target="#visualizations"><span class="header-section-number">2.2.3</span> Visualizations</a></li>
-  <li><a href="#percentage-of-missing-values-per-column" id="toc-percentage-of-missing-values-per-column" class="nav-link" data-scroll-target="#percentage-of-missing-values-per-column"><span class="header-section-number">2.2.4</span> Percentage of Missing Values per Column</a></li>
-  <li><a href="#commentary-graph-2---population-vise-missing-value." id="toc-commentary-graph-2---population-vise-missing-value." class="nav-link" data-scroll-target="#commentary-graph-2---population-vise-missing-value."><span class="header-section-number">2.2.5</span> Commentary: Graph 2 - population vise missing value.</a></li>
-  <li><a href="#commentary-graph-2---matrix-represention-for-missing-value-pattern" id="toc-commentary-graph-2---matrix-represention-for-missing-value-pattern" class="nav-link" data-scroll-target="#commentary-graph-2---matrix-represention-for-missing-value-pattern"><span class="header-section-number">2.2.6</span> Commentary: Graph 2 - Matrix Represention for missing value pattern</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">2.2.7</span> Conclusion</a></li>
+  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings"><span class="header-section-number">3.2.1</span> Key Findings:</a></li>
+  <li><a href="#highlights" id="toc-highlights" class="nav-link" data-scroll-target="#highlights"><span class="header-section-number">3.2.2</span> Highlights:</a></li>
+  </ul></li>
+  <li><a href="#choropleth-map-global-distribution-of-asylum-seekers" id="toc-choropleth-map-global-distribution-of-asylum-seekers" class="nav-link" data-scroll-target="#choropleth-map-global-distribution-of-asylum-seekers"><span class="header-section-number">3.3</span> <img src="Chloro.png" class="img-fluid" alt="Choropleth Map: Global Distribution of Asylum Seekers"></a>
+  <ul class="collapse">
+  <li><a href="#predicted-trends-and-observations" id="toc-predicted-trends-and-observations" class="nav-link" data-scroll-target="#predicted-trends-and-observations"><span class="header-section-number">3.3.1</span> Predicted Trends and Observations:</a></li>
+  </ul></li>
+  <li><a href="#ridgeline-plot-normalized-refugee-numbers-by-region" id="toc-ridgeline-plot-normalized-refugee-numbers-by-region" class="nav-link" data-scroll-target="#ridgeline-plot-normalized-refugee-numbers-by-region"><span class="header-section-number">3.4</span> <img src="Ridge.png" class="img-fluid" alt="Ridgeline Plot: Normalized Refugee Numbers by Region"></a>
+  <ul class="collapse">
+  <li><a href="#key-insights" id="toc-key-insights" class="nav-link" data-scroll-target="#key-insights"><span class="header-section-number">3.4.1</span> Key Insights:</a></li>
+  </ul></li>
+  <li><a href="#boxplot-distribution-of-international-migrant-stock" id="toc-boxplot-distribution-of-international-migrant-stock" class="nav-link" data-scroll-target="#boxplot-distribution-of-international-migrant-stock"><span class="header-section-number">3.5</span> <img src="Box.png" class="img-fluid" alt="Boxplot: Distribution of International Migrant Stock"></a>
+  <ul class="collapse">
+  <li><a href="#key-findings-1" id="toc-key-findings-1" class="nav-link" data-scroll-target="#key-findings-1"><span class="header-section-number">3.5.1</span> Key Findings:</a></li>
+  </ul></li>
+  <li><a href="#histogram-proportion-of-migrants-in-total-population" id="toc-histogram-proportion-of-migrants-in-total-population" class="nav-link" data-scroll-target="#histogram-proportion-of-migrants-in-total-population"><span class="header-section-number">3.6</span> <img src="Hist.png" class="img-fluid" alt="Histogram: Proportion of Migrants in Total Population"></a>
+  <ul class="collapse">
+  <li><a href="#observations" id="toc-observations" class="nav-link" data-scroll-target="#observations"><span class="header-section-number">3.6.1</span> Observations:</a></li>
+  </ul></li>
+  <li><a href="#q-q-plot-distribution-analysis-of-migrant-stock" id="toc-q-q-plot-distribution-analysis-of-migrant-stock" class="nav-link" data-scroll-target="#q-q-plot-distribution-analysis-of-migrant-stock"><span class="header-section-number">3.7</span> <img src="QQ.png" class="img-fluid" alt="Q-Q Plot: Distribution Analysis of Migrant Stock"></a>
+  <ul class="collapse">
+  <li><a href="#key-findings-2" id="toc-key-findings-2" class="nav-link" data-scroll-target="#key-findings-2"><span class="header-section-number">3.7.1</span> Key Findings:</a></li>
+  </ul></li>
+  <li><a href="#scatter-plot-migrant-stock-vs.-refugee-population" id="toc-scatter-plot-migrant-stock-vs.-refugee-population" class="nav-link" data-scroll-target="#scatter-plot-migrant-stock-vs.-refugee-population"><span class="header-section-number">3.8</span> <img src="Scatterplot2.png" class="img-fluid" alt="Scatter Plot: Migrant Stock vs.&nbsp;Refugee Population"></a>
+  <ul class="collapse">
+  <li><a href="#insights" id="toc-insights" class="nav-link" data-scroll-target="#insights"><span class="header-section-number">3.8.1</span> Insights:</a></li>
+  </ul></li>
+  <li><a href="#parallel-coordinates-plot-migration-metrics" id="toc-parallel-coordinates-plot-migration-metrics" class="nav-link" data-scroll-target="#parallel-coordinates-plot-migration-metrics"><span class="header-section-number">3.9</span> <img src="Parcoords.png" class="img-fluid" alt="Parallel Coordinates Plot: Migration Metrics"></a></li>
+  <li><a href="#heatmap-overview-of-migration-metrics" id="toc-heatmap-overview-of-migration-metrics" class="nav-link" data-scroll-target="#heatmap-overview-of-migration-metrics"><span class="header-section-number">3.10</span> <img src="Heatmap.png" class="img-fluid" alt="Heatmap: Overview of Migration Metrics"></a>
+  <ul class="collapse">
+  <li><a href="#insights-1" id="toc-insights-1" class="nav-link" data-scroll-target="#insights-1"><span class="header-section-number">3.10.1</span> Insights:</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/sneha1012/EDAV-FINAL-PROJECT.git/edit/main/data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sneha1012/EDAV-FINAL-PROJECT.git/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/sneha1012/EDAV-FINAL-PROJECT.git/edit/main/results.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sneha1012/EDAV-FINAL-PROJECT.git/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter - Results</span></h1>
 </div>
 
 
@@ -189,111 +212,145 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="description" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="description"><span class="header-section-number">2.1</span> Description</h2>
-<p>The dataset used in this analysis is sourced from <a href="https://data.un.org">UN Data</a>, specifically focusing on migration and refugee statistics. This dataset provides a detailed view of global migration trends, including the number of international migrants, refugees, asylum seekers, and other populations of concern, categorized by region and year.</p>
-<section id="key-details" class="level3" data-number="2.1.1">
-<h3 data-number="2.1.1" class="anchored" data-anchor-id="key-details"><span class="header-section-number">2.1.1</span> Key Details:</h3>
+<section id="scatter-plot-analysis-gender-distribution-in-migration" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="scatter-plot-analysis-gender-distribution-in-migration"><span class="header-section-number">3.1</span> <img src="Scatter.png" class="img-fluid" alt="Scatter Plot Analysis: Gender Distribution in Migration"></h2>
+<p>This scatter plot examines the relationship between male and female international migrant stocks as a percentage of the total population. It provides insight into the gender distribution of migration patterns across different years.</p>
+<section id="key-observations" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="key-observations"><span class="header-section-number">3.1.1</span> Key Observations:</h3>
+<ol type="1">
+<li><p><strong>Positive Correlation</strong>:<br>
+The data shows a strong positive correlation between male and female migrant stocks, as indicated by the clustering of points along the dashed equality line (black). This suggests that countries with higher male migrant stocks tend to have correspondingly higher female migrant stocks.</p></li>
+<li><p><strong>Temporal Trends</strong>:<br>
+Points are color-coded by year (2005, 2010, 2015, and 2020), enabling visualization of migration patterns over time. While no significant year-to-year shifts are evident, subtle variations in migration behavior are observed.</p></li>
+<li><p><strong>Outliers</strong>:<br>
+Some points deviate significantly from the equality line, representing countries where the proportion of male and female migrants is imbalanced. These outliers likely reflect specific geopolitical or cultural factors influencing gendered migration patterns.</p></li>
+</ol>
+</section>
+</section>
+<section id="bar-chart-regional-distribution-of-populations-of-concern" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="bar-chart-regional-distribution-of-populations-of-concern"><span class="header-section-number">3.2</span> <img src="Bar.png" class="img-fluid" alt="Bar Chart: Regional Distribution of Populations of Concern"></h2>
+<p>This bar chart presents the total population of concern to the UNHCR across the top 10 regions, ranked by their respective values. The visualization highlights significant contributors, aiding in targeted analysis and resource allocation.</p>
+<section id="key-findings" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="key-findings"><span class="header-section-number">3.2.1</span> Key Findings:</h3>
+<ol type="1">
+<li><p><strong>Dominant Regions</strong>:<br>
+Asia and Africa contribute the highest numbers, with Asia surpassing 57 million and Africa exceeding 49 million. Other regions, such as Colombia, the Syrian Arab Republic, and Europe, also show substantial populations of concern.</p></li>
+<li><p><strong>Total Context</strong>:<br>
+Combined, the global figures exceed 141 million, illustrating the UNHCR’s vast operational scale.</p></li>
+</ol>
+</section>
+<section id="highlights" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="highlights"><span class="header-section-number">3.2.2</span> Highlights:</h3>
 <ul>
-<li><strong>Source</strong>: <a href="https://data.un.org">UN Data - Migration and Refugee Statistics</a></li>
-<li><strong>Data Format</strong>: Comma-separated values (CSV).</li>
-<li><strong>Size and Dimensions</strong>:
-<ul>
-<li><strong>Rows</strong>: 7,239</li>
-<li><strong>Columns</strong>: 7 (<code>region_country_area</code>, <code>year</code>, <code>series</code>, <code>value</code>, etc.)</li>
-</ul></li>
-<li><strong>Variables</strong>:
-<ul>
-<li><code>region_country_area</code>: The geographic region or country being analyzed.</li>
-<li><code>year</code>: Year of data collection (e.g., 2005, 2010, 2015).</li>
-<li><code>series</code>: The category of data (e.g., “Total Refugees,” “Asylum Seekers”).</li>
-<li><code>value</code>: Numeric value for the given metric and year.</li>
-<li><code>footnotes</code> and <code>source</code>: Additional information about the data.</li>
-</ul></li>
+<li><strong>Understanding Global Disparities</strong>:<br>
+The chart underscores significant differences in populations of concern across regions, clarifying priority areas for attention.</li>
+<li><strong>Policy and Resource Allocation</strong>:<br>
+It identifies regions requiring urgent intervention, enabling stakeholders to make informed decisions.</li>
+<li><strong>Ease of Interpretation</strong>:<br>
+Precise numerical labels and organized rankings enhance clarity and usability.</li>
 </ul>
 </section>
-<section id="challenges" class="level3" data-number="2.1.2">
-<h3 data-number="2.1.2" class="anchored" data-anchor-id="challenges"><span class="header-section-number">2.1.2</span> Challenges:</h3>
+</section>
+<section id="choropleth-map-global-distribution-of-asylum-seekers" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="choropleth-map-global-distribution-of-asylum-seekers"><span class="header-section-number">3.3</span> <img src="Chloro.png" class="img-fluid" alt="Choropleth Map: Global Distribution of Asylum Seekers"></h2>
+<p>The map is a visually appealing and accurate representation of the global distribution of asylum seekers. The gradient color scheme from blue to red effectively highlights regions with varying magnitudes of asylum seekers. The map provides a clear and intuitive understanding of the data.</p>
+<section id="predicted-trends-and-observations" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="predicted-trends-and-observations"><span class="header-section-number">3.3.1</span> Predicted Trends and Observations:</h3>
+<ol type="1">
+<li><p><strong>Regional Concentrations</strong>:<br>
+High concentrations of asylum seekers are observed in North America and parts of Europe, attributed to their political and economic stability.</p></li>
+<li><p><strong>Disparities in Distribution</strong>:<br>
+Significant numbers are also observed in countries across Africa and the Middle East, driven by ongoing conflicts and humanitarian crises.</p></li>
+<li><p><strong>Migration Patterns</strong>:<br>
+The data suggests that asylum seekers predominantly target developed nations or regions geographically closer to conflict zones.</p></li>
+</ol>
+</section>
+</section>
+<section id="ridgeline-plot-normalized-refugee-numbers-by-region" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="ridgeline-plot-normalized-refugee-numbers-by-region"><span class="header-section-number">3.4</span> <img src="Ridge.png" class="img-fluid" alt="Ridgeline Plot: Normalized Refugee Numbers by Region"></h2>
+<p>The ridgeline plot visualizes the normalized refugee numbers across different regions.</p>
+<section id="key-insights" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="key-insights"><span class="header-section-number">3.4.1</span> Key Insights:</h3>
+<ol type="1">
+<li><strong>Regional Leaders</strong>:<br>
+Europe shows the highest density of normalized refugee numbers, hosting the largest population relative to its total population.</li>
+<li><strong>Significant Peaks</strong>:<br>
+Countries like Pakistan, Germany, and Lebanon stand out for hosting disproportionately high refugee populations.</li>
+<li><strong>Disparities</strong>:<br>
+Regions such as Uganda and Iran exhibit lower normalized refugee numbers.</li>
+</ol>
+</section>
+</section>
+<section id="boxplot-distribution-of-international-migrant-stock" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="boxplot-distribution-of-international-migrant-stock"><span class="header-section-number">3.5</span> <img src="Box.png" class="img-fluid" alt="Boxplot: Distribution of International Migrant Stock"></h2>
+<p>This boxplot visualizes the distribution of international migrant stock (both sexes, in numbers), as given in our dataset across different years, using a logarithmic scale for better clarity. The following insights can be drawn:</p>
+<p>This boxplot visualizes the distribution of international migrant stock (both sexes, in numbers) across different years, using a logarithmic scale for better clarity.</p>
+<section id="key-findings-1" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="key-findings-1"><span class="header-section-number">3.5.1</span> Key Findings:</h3>
+<ol type="1">
+<li><strong>Stable Migration Trends</strong>:<br>
+Median values indicate relatively stable patterns over the years, with only slight variations.</li>
+<li><strong>Outliers</strong>:<br>
+Red points highlight countries with exceptionally high migrant stocks in specific years.</li>
+<li><strong>Central Tendencies</strong>:<br>
+The dashed green line connecting medians shows consistent trends over time.</li>
+</ol>
+</section>
+</section>
+<section id="histogram-proportion-of-migrants-in-total-population" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="histogram-proportion-of-migrants-in-total-population"><span class="header-section-number">3.6</span> <img src="Hist.png" class="img-fluid" alt="Histogram: Proportion of Migrants in Total Population"></h2>
+<p>This histogram shows the distribution of international migrant stock as a percentage of the total population.</p>
+<section id="observations" class="level3" data-number="3.6.1">
+<h3 data-number="3.6.1" class="anchored" data-anchor-id="observations"><span class="header-section-number">3.6.1</span> Observations:</h3>
+<ol type="1">
+<li><strong>Right-Skewed Data</strong>:<br>
+Most countries have a migrant stock below 10% of their population, with a few outliers nearing 100%.</li>
+<li><strong>Density Overlay</strong>:<br>
+The concentration of values at the lower end highlights the relatively low proportion of migration in most countries.</li>
+</ol>
+</section>
+</section>
+<section id="q-q-plot-distribution-analysis-of-migrant-stock" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="q-q-plot-distribution-analysis-of-migrant-stock"><span class="header-section-number">3.7</span> <img src="QQ.png" class="img-fluid" alt="Q-Q Plot: Distribution Analysis of Migrant Stock"></h2>
+<p>The Q-Q plot compares the distribution of international migrant stock to a theoretical normal distribution.</p>
+<section id="key-findings-2" class="level3" data-number="3.7.1">
+<h3 data-number="3.7.1" class="anchored" data-anchor-id="key-findings-2"><span class="header-section-number">3.7.1</span> Key Findings:</h3>
 <ul>
-<li><strong>Missing Values</strong>: A significant proportion of rows have missing values in key columns, such as <code>value</code>.</li>
-<li><strong>Inconsistent Formatting</strong>: Numeric fields include commas, requiring cleaning and conversion.</li>
-<li><strong>Multiple Categories per Region/Year</strong>: The <code>series</code> column creates a challenge for reshaping the dataset for analysis.</li>
+<li><strong>Right-Skewed Distribution</strong>:<br>
+Significant deviation from the red diagonal line in the upper quantiles confirms the skewed nature of the data.</li>
+<li><strong>Shapiro-Wilk Normality Test</strong>:<br>
+The test result (W = 0.68905, p-value &lt; 2.2e-16) confirms that the data is not normally distributed.</li>
 </ul>
-<p>The cleaned version of this dataset, prepared using R, addresses these issues by: 1. Replacing missing values with zero for numerical analysis while preserving a log of missing patterns. 2. Standardizing numeric fields by removing commas. 3. Reshaping the data to ensure categories (e.g., “Refugees,” “Asylum Seekers”) are in separate columns.</p>
 </section>
 </section>
-<section id="missing-value-analysis" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="missing-value-analysis"><span class="header-section-number">2.2</span> Missing Value Analysis</h2>
-<section id="process-of-analysis" class="level3" data-number="2.2.1">
-<h3 data-number="2.2.1" class="anchored" data-anchor-id="process-of-analysis"><span class="header-section-number">2.2.1</span> Process of Analysis</h3>
-<p>To analyze missing values in our dataset, we followed these steps: 1. Identified the variables with missing data using summary statistics and visualizations. 2. Visualized the patterns of missing data across variables and years to detect trends or anomalies. 3. Analyzed the impact of missing data on key variables such as <code>value</code>, which includes refugee counts and other demographic information. 4. Proposed strategies for handling missing data, such as imputation or exclusion, depending on the observed patterns.</p>
+<section id="scatter-plot-migrant-stock-vs.-refugee-population" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="scatter-plot-migrant-stock-vs.-refugee-population"><span class="header-section-number">3.8</span> <img src="Scatterplot2.png" class="img-fluid" alt="Scatter Plot: Migrant Stock vs.&nbsp;Refugee Population"></h2>
+<p>This scatterplot examines the relationship between international migrant stock and total refugee population.</p>
+<section id="insights" class="level3" data-number="3.8.1">
+<h3 data-number="3.8.1" class="anchored" data-anchor-id="insights"><span class="header-section-number">3.8.1</span> Insights:</h3>
+<ul>
+<li><strong>Clustered Data</strong>:<br>
+Most countries have low values for both metrics, clustering near the origin.</li>
+<li><strong>Outliers</strong>:<br>
+A few countries with extremely high migrant or refugee populations deviate significantly, suggesting unique roles in global migration.</li>
+</ul>
 </section>
-<section id="patterns-observed" class="level3" data-number="2.2.2">
-<h3 data-number="2.2.2" class="anchored" data-anchor-id="patterns-observed"><span class="header-section-number">2.2.2</span> Patterns Observed</h3>
-<p>Our analysis revealed the following patterns in missing data: - The variable <code>value</code> exhibited a significant proportion of missing data, particularly in certain categories such as <code>Asylum Seekers</code>. - Missing data varied by year, with older records (e.g., 2005) having more missing values compared to recent records (e.g., 2020). - Regional data was more complete for high-income countries but less so for low-income and conflict-affected regions.</p>
 </section>
-<section id="visualizations" class="level3" data-number="2.2.3">
-<h3 data-number="2.2.3" class="anchored" data-anchor-id="visualizations"><span class="header-section-number">2.2.3</span> Visualizations</h3>
+<section id="parallel-coordinates-plot-migration-metrics" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="parallel-coordinates-plot-migration-metrics"><span class="header-section-number">3.9</span> <img src="Parcoords.png" class="img-fluid" alt="Parallel Coordinates Plot: Migration Metrics"></h2>
+<p>This parallel coordinates plot visualizes normalized values of migration metrics (Migrant Stock, Total Refugees, and Asylum Seekers) for the top 10 countries. The lines show significant variability across metrics for different countries. For example, some regions like “Northern America” and “United States of America” have high migrant stock but relatively lower refugee populations. Conversely, regions like “Africa” and “Asia” show higher refugee numbers but lower migrant stocks. This highlights the differing roles countries play in migration dynamics—some as destinations for migrants and others as hosts for refugees.</p>
 </section>
-<section id="percentage-of-missing-values-per-column" class="level3" data-number="2.2.4">
-<h3 data-number="2.2.4" class="anchored" data-anchor-id="percentage-of-missing-values-per-column"><span class="header-section-number">2.2.4</span> Percentage of Missing Values per Column</h3>
-<p>This analysis identifies the proportion of missing values for each column in the dataset to understand which variables have significant data gaps.</p>
-<pre><code># Load necessary libraries
-library(ggplot2)
-library(dplyr)
-library(tidyr)
-
-# Ensure data is loaded properly
-data &lt;- read.csv("path_to_your_cleaned_csv_file.csv")
-
-# Calculate the percentage of missing values per column
-missing_values &lt;- data |&gt;
-  summarise(across(everything(), ~ sum(is.na(.)))) 
-  pivot_longer(everything(), names_to = "Column", values_to = "Missing") |&gt;
-  mutate(Percentage = (Missing / nrow(data)) * 100)
-
-# Bar plot of missing values
-ggplot(missing_values, aes(x = reorder(Column, -Percentage), y = Percentage)) +
-  geom_bar(stat = "identity", fill = "steelblue") +
-  coord_flip() +
-  labs(title = "Percentage of Missing Values per Column", 
-       x = "Columns", 
-       y = "Percentage of Missing Values") +
-  theme_minimal()</code></pre>
-<p><img src="Graphs/graph1.png" class="img-fluid"></p>
-<pre><code># Create missing value matrix
-missing_matrix &lt;- is.na(data) 
-  as.data.frame() |&gt;
-  mutate(row_id = 1:n()) |&gt;
-  pivot_longer(-row_id, names_to = "Variable", values_to = "Missing")
-
-# Create the plot
-ggplot(missing_matrix, aes(x = Variable, y = row_id)) +
-  geom_tile(aes(fill = Missing)) +
-  scale_fill_manual(values = c("steelblue", "red"), 
-                   labels = c("Present", "Missing"),
-                   name = "Value Status") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  coord_flip() +
-  labs(x = "Variables", 
-       y = "Observation Number",
-       title = "Missing Value Pattern Matrix")</code></pre>
-</section>
-<section id="commentary-graph-2---population-vise-missing-value." class="level3" data-number="2.2.5">
-<h3 data-number="2.2.5" class="anchored" data-anchor-id="commentary-graph-2---population-vise-missing-value."><span class="header-section-number">2.2.5</span> Commentary: Graph 2 - population vise missing value.</h3>
-<p>The bar chart shows the proportion of missing values in each column. The Other of concern to UNHCR (number) column has the highest missing percentage (~45%), followed by Asylum seekers, including pending cases (number) and Total refugees and people in refugee-like situations (number). Core variables such as Year and Region/Country/Area exhibit no missing values, ensuring consistent contextual data. The variability in missing values suggests potential issues in data collection across regions and categories, necessitating targeted imputation or exclusion strategies.</p>
-<p><img src="Graphs/graph2.png" class="img-fluid"></p>
-</section>
-<section id="commentary-graph-2---matrix-represention-for-missing-value-pattern" class="level3" data-number="2.2.6">
-<h3 data-number="2.2.6" class="anchored" data-anchor-id="commentary-graph-2---matrix-represention-for-missing-value-pattern"><span class="header-section-number">2.2.6</span> Commentary: Graph 2 - Matrix Represention for missing value pattern</h3>
-<p>The matrix visualization reveals that missing values (red) occur systematically in some columns, notably Other of concern to UNHCR (number) and Asylum seekers, including pending cases (number). Variables such as Region/Country/Area and Year remain complete (blue), providing reliable context for analysis. The clustering of missing values across observations indicates potential issues with data collection in specific time periods or regions.</p>
-</section>
-<section id="conclusion" class="level3" data-number="2.2.7">
-<h3 data-number="2.2.7" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">2.2.7</span> Conclusion</h3>
-<p>The examination of missing data reveals an uneven distribution across variables, years, and regions. To maintain the reliability of our findings:<br>
-- Missing values in key variables (e.g., <code>value</code>) will be addressed using suitable techniques such as mean or mode imputation.<br>
-- Variables or years with substantial missing data may be excluded from the analysis to minimize the risk of bias.</p>
+<section id="heatmap-overview-of-migration-metrics" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="heatmap-overview-of-migration-metrics"><span class="header-section-number">3.10</span> <img src="Heatmap.png" class="img-fluid" alt="Heatmap: Overview of Migration Metrics"></h2>
+<p>The heatmap highlights migration metrics across the top 10 countries/regions using darker shades to indicate higher values.</p>
+<section id="insights-1" class="level3" data-number="3.10.1">
+<h3 data-number="3.10.1" class="anchored" data-anchor-id="insights-1"><span class="header-section-number">3.10.1</span> Insights:</h3>
+<ul>
+<li><strong>Uneven Distribution</strong>:<br>
+The United States and Northern America exhibit high migrant stocks, while Africa and Asia show higher refugee populations.</li>
+<li><strong>Variability in Asylum Seekers</strong>:<br>
+Some regions host significantly more asylum seekers than others.</li>
+</ul>
 
 
 </section>
@@ -711,13 +768,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      <a href="./data.html" class="pagination-link" aria-label="Data">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./results.html" class="pagination-link" aria-label="Chapter - Results">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter - Results</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./d3graph.html" class="pagination-link" aria-label="Interactive Country Migration Line Chart">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Interactive Country Migration Line Chart</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -729,7 +786,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sneha1012/EDAV-FINAL-PROJECT.git/edit/main/data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sneha1012/EDAV-FINAL-PROJECT.git/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/sneha1012/EDAV-FINAL-PROJECT.git/edit/main/results.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sneha1012/EDAV-FINAL-PROJECT.git/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
