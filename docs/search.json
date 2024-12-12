@@ -42,111 +42,120 @@
   {
     "objectID": "results.html",
     "href": "results.html",
-    "title": "3  Chapter - Results",
+    "title": "3  Results",
     "section": "",
     "text": "3.1\nThis scatter plot examines the relationship between male and female international migrant stocks as a percentage of the total population. It provides insight into the gender distribution of migration patterns across different years.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter - Results</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Results</span>"
+
     ]
   },
   {
     "objectID": "results.html#scatter-plot-analysis-gender-distribution-in-migration",
     "href": "results.html#scatter-plot-analysis-gender-distribution-in-migration",
-    "title": "3  Chapter - Results",
+    "title": "3  Results",
     "section": "",
     "text": "3.1.1 Key Observations:\n\nPositive Correlation:\nThe data shows a strong positive correlation between male and female migrant stocks, as indicated by the clustering of points along the dashed equality line (black). This suggests that countries with higher male migrant stocks tend to have correspondingly higher female migrant stocks.\nTemporal Trends:\nPoints are color-coded by year (2005, 2010, 2015, and 2020), enabling visualization of migration patterns over time. While no significant year-to-year shifts are evident, subtle variations in migration behavior are observed.\nOutliers:\nSome points deviate significantly from the equality line, representing countries where the proportion of male and female migrants is imbalanced. These outliers likely reflect specific geopolitical or cultural factors influencing gendered migration patterns.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter - Results</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Results</span>"
+
     ]
   },
   {
     "objectID": "results.html#bar-chart-regional-distribution-of-populations-of-concern",
     "href": "results.html#bar-chart-regional-distribution-of-populations-of-concern",
-    "title": "3  Chapter - Results",
+    "title": "3  Results",
     "section": "3.2 ",
     "text": "3.2 \nThis bar chart presents the total population of concern to the UNHCR across the top 10 regions, ranked by their respective values. The visualization highlights significant contributors, aiding in targeted analysis and resource allocation.\n\n3.2.1 Key Findings:\n\nDominant Regions:\nAsia and Africa contribute the highest numbers, with Asia surpassing 57 million and Africa exceeding 49 million. Other regions, such as Colombia, the Syrian Arab Republic, and Europe, also show substantial populations of concern.\nTotal Context:\nCombined, the global figures exceed 141 million, illustrating the UNHCR’s vast operational scale.\n\n\n\n3.2.2 Highlights:\n\nUnderstanding Global Disparities:\nThe chart underscores significant differences in populations of concern across regions, clarifying priority areas for attention.\nPolicy and Resource Allocation:\nIt identifies regions requiring urgent intervention, enabling stakeholders to make informed decisions.\nEase of Interpretation:\nPrecise numerical labels and organized rankings enhance clarity and usability.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter - Results</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Results</span>"
+
     ]
   },
   {
     "objectID": "results.html#choropleth-map-global-distribution-of-asylum-seekers",
     "href": "results.html#choropleth-map-global-distribution-of-asylum-seekers",
-    "title": "3  Chapter - Results",
+    "title": "3  Results",
     "section": "3.3 ",
     "text": "3.3 \nThe map is a visually appealing and accurate representation of the global distribution of asylum seekers. The gradient color scheme from blue to red effectively highlights regions with varying magnitudes of asylum seekers. The map provides a clear and intuitive understanding of the data.\n\n3.3.1 Predicted Trends and Observations:\n\nRegional Concentrations:\nHigh concentrations of asylum seekers are observed in North America and parts of Europe, attributed to their political and economic stability.\nDisparities in Distribution:\nSignificant numbers are also observed in countries across Africa and the Middle East, driven by ongoing conflicts and humanitarian crises.\nMigration Patterns:\nThe data suggests that asylum seekers predominantly target developed nations or regions geographically closer to conflict zones.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter - Results</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Results</span>"
+
     ]
   },
   {
     "objectID": "results.html#ridgeline-plot-normalized-refugee-numbers-by-region",
     "href": "results.html#ridgeline-plot-normalized-refugee-numbers-by-region",
-    "title": "3  Chapter - Results",
+    "title": "3  Results",
     "section": "3.4 ",
     "text": "3.4 \nThe ridgeline plot visualizes the normalized refugee numbers across different regions.\n\n3.4.1 Key Insights:\n\nRegional Leaders:\nEurope shows the highest density of normalized refugee numbers, hosting the largest population relative to its total population.\nSignificant Peaks:\nCountries like Pakistan, Germany, and Lebanon stand out for hosting disproportionately high refugee populations.\nDisparities:\nRegions such as Uganda and Iran exhibit lower normalized refugee numbers.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter - Results</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Results</span>"
+
     ]
   },
   {
     "objectID": "results.html#boxplot-distribution-of-international-migrant-stock",
     "href": "results.html#boxplot-distribution-of-international-migrant-stock",
-    "title": "3  Chapter - Results",
+    "title": "3  Results",
     "section": "3.5 ",
     "text": "3.5 \nThis boxplot visualizes the distribution of international migrant stock (both sexes, in numbers), as given in our dataset across different years, using a logarithmic scale for better clarity. The following insights can be drawn:\nThis boxplot visualizes the distribution of international migrant stock (both sexes, in numbers) across different years, using a logarithmic scale for better clarity.\n\n3.5.1 Key Findings:\n\nStable Migration Trends:\nMedian values indicate relatively stable patterns over the years, with only slight variations.\nOutliers:\nRed points highlight countries with exceptionally high migrant stocks in specific years.\nCentral Tendencies:\nThe dashed green line connecting medians shows consistent trends over time.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter - Results</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Results</span>"
     ]
   },
   {
     "objectID": "results.html#histogram-proportion-of-migrants-in-total-population",
     "href": "results.html#histogram-proportion-of-migrants-in-total-population",
-    "title": "3  Chapter - Results",
+    "title": "3  Results",
     "section": "3.6 ",
     "text": "3.6 \nThis histogram shows the distribution of international migrant stock as a percentage of the total population.\n\n3.6.1 Observations:\n\nRight-Skewed Data:\nMost countries have a migrant stock below 10% of their population, with a few outliers nearing 100%.\nDensity Overlay:\nThe concentration of values at the lower end highlights the relatively low proportion of migration in most countries.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter - Results</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Results</span>"
+
     ]
   },
   {
     "objectID": "results.html#q-q-plot-distribution-analysis-of-migrant-stock",
     "href": "results.html#q-q-plot-distribution-analysis-of-migrant-stock",
-    "title": "3  Chapter - Results",
+    "title": "3  Results",
     "section": "3.7 ",
     "text": "3.7 \nThe Q-Q plot compares the distribution of international migrant stock to a theoretical normal distribution.\n\n3.7.1 Key Findings:\n\nRight-Skewed Distribution:\nSignificant deviation from the red diagonal line in the upper quantiles confirms the skewed nature of the data.\nShapiro-Wilk Normality Test:\nThe test result (W = 0.68905, p-value &lt; 2.2e-16) confirms that the data is not normally distributed.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter - Results</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Results</span>"
+
     ]
   },
   {
     "objectID": "results.html#scatter-plot-migrant-stock-vs.-refugee-population",
     "href": "results.html#scatter-plot-migrant-stock-vs.-refugee-population",
-    "title": "3  Chapter - Results",
+    "title": "3  Results",
     "section": "3.8 ",
     "text": "3.8 \nThis scatterplot examines the relationship between international migrant stock and total refugee population.\n\n3.8.1 Insights:\n\nClustered Data:\nMost countries have low values for both metrics, clustering near the origin.\nOutliers:\nA few countries with extremely high migrant or refugee populations deviate significantly, suggesting unique roles in global migration.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter - Results</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Results</span>"
+
     ]
   },
   {
     "objectID": "results.html#parallel-coordinates-plot-migration-metrics",
     "href": "results.html#parallel-coordinates-plot-migration-metrics",
-    "title": "3  Chapter - Results",
+    "title": "3  Results",
     "section": "3.9 ",
     "text": "3.9 \nThis parallel coordinates plot visualizes normalized values of migration metrics (Migrant Stock, Total Refugees, and Asylum Seekers) for the top 10 countries. The lines show significant variability across metrics for different countries. For example, some regions like “Northern America” and “United States of America” have high migrant stock but relatively lower refugee populations. Conversely, regions like “Africa” and “Asia” show higher refugee numbers but lower migrant stocks. This highlights the differing roles countries play in migration dynamics—some as destinations for migrants and others as hosts for refugees.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter - Results</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Results</span>"
     ]
   },
   {
     "objectID": "results.html#heatmap-overview-of-migration-metrics",
     "href": "results.html#heatmap-overview-of-migration-metrics",
-    "title": "3  Chapter - Results",
+    "title": "3  Results",
     "section": "3.10 ",
     "text": "3.10 \nThe heatmap highlights migration metrics across the top 10 countries/regions using darker shades to indicate higher values.\n\n3.10.1 Insights:\n\nUneven Distribution:\nThe United States and Northern America exhibit high migrant stocks, while Africa and Asia show higher refugee populations.\nVariability in Asylum Seekers:\nSome regions host significantly more asylum seekers than others.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Chapter - Results</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Results</span>"
+
     ]
   },
   {
