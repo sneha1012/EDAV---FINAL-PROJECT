@@ -1,0 +1,72 @@
+# Interactive Country Migration Line Chart
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  #chart {
+    width: 100%;
+    height: 400px;
+    /* Remove border */
+  }
+  #controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .tooltip {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    pointer-events: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+  }
+  .legend {
+    font-size: 12px;
+  }
+</style>
+
+<div id="controls">
+  <select id="countrySelect">
+    <option value="">Select a Country/Region</option>
+    <option value="Brazil">Brazil</option>
+    <option value="United States of America">United States of America</option>
+    <option value="China">China</option>
+    <option value="India">India</option>
+    <option value="Africa">Africa</option>
+    <option value="Germany">Germany</option>
+    <option value="France">France</option>
+    <option value="Japan">Japan</option>
+    <option value="Mexico">Mexico</option>
+    <option value="Australia">Australia</option>
+</select>
+
+  <button id="addBtn">Add Line</button>
+  <button id="removeBtn">Remove Line</button>
+</div>
+
+<div id="chart"></div>
+<div id="tooltip" class="tooltip" style="opacity: 0;"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="scripts/myscript.js"></script>
+
+<div id="description">
+  <p>
+    This interactive line chart provides a visual representation of the international migrant stock over time for selected countries and regions. 
+    The x-axis denotes the years from 2005 to 2020, while the y-axis indicates the number of migrants in absolute terms. 
+    Initially, data for the United States of America, Africa, and India are displayed to highlight significant trends in migration patterns.
+    
+    Users can explore additional countries by selecting them from the dropdown menu and clicking "Add Line". 
+    Each line is color-coded for clarity, and users can remove lines by selecting a country and clicking "Remove Line". 
+    Hovering over any point on a line reveals detailed information about that year's migrant stock, providing insights into migration dynamics.
+    
+    This tool is designed to facilitate understanding of global migration trends and the impact of migration on different regions over time.
+  </p>
+</div>
+
