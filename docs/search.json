@@ -152,11 +152,11 @@
   {
     "objectID": "d3graph.html",
     "href": "d3graph.html",
-    "title": "4  Interactive Country Migration Line Chart",
+    "title": "4  Interactive graph",
     "section": "",
-    "text": "Select a Country/Region Brazil United States of America China India Africa Germany France Japan Mexico Australia \nAdd Line Remove Line\n\n\n\n\n\n\n\n\n\n\n\nThis interactive line chart provides a visual representation of the international migrant stock over time for selected countries and regions. The x-axis denotes the years from 2005 to 2020, while the y-axis indicates the number of migrants in absolute terms. Initially, data for the United States of America, Africa, and India are displayed to highlight significant trends in migration patterns.\nUsers can explore additional countries by selecting them from the dropdown menu and clicking “Add Line”. Each line is color-coded for clarity, and users can remove lines by selecting a country and clicking “Remove Line”. Hovering over any point on a line reveals detailed information about that year’s migrant stock, providing insights into migration dynamics.\nThis tool is designed to facilitate understanding of global migration trends and the impact of migration on different regions over time.",
+    "text": "Select a Country/Region Brazil United States of America China India Africa Germany France Japan Mexico Australia  Add Line Remove Line\n\n\n\n\n\n\n\n\n\n\n\n\nThis interactive line chart provides a visual representation of the international migrant stock over time for selected countries and regions. The x-axis denotes the years from 2005 to 2020, while the y-axis indicates the number of migrants in absolute terms. Initially, data for the United States of America, Africa, and India are displayed to highlight significant trends in migration patterns.\nUsers can explore additional countries by selecting them from the dropdown menu and clicking “Add Line”. Each line is color-coded for clarity, and users can remove lines by selecting a country and clicking “Remove Line”. Hovering over any point on a line reveals detailed information about that year’s migrant stock, providing insights into migration dynamics.\nThis tool is designed to facilitate understanding of global migration trends and the impact of migration on different regions over time.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interactive Country Migration Line Chart</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interactive graph</span>"
     ]
   },
   {
