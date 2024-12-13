@@ -12,11 +12,6 @@ This Project focuses on migration and refugee statistics which offer a unique le
 - `scripts/`: R scripts for data processing
 - `plots_files/`: Generated plot images
 
-## Key Findings
-- Explored relationships between song popularity and audio features
-- Analyzed trends in song characteristics over time
-- Investigated genre distribution and its impact on popularity
-
 ## Interactive Visualizations
 Visit our [project website](https://sneha1012.github.io/EDAV-FINAL-PROJECT/) to explore interactive D3 visualizations of the data.
 
