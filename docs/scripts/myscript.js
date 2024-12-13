@@ -129,8 +129,8 @@ function addLine(country) {
 
         svg.append("text")
            .attr("class", `label-${country}`)
-           .attr("x", xScale(countryData[countryData.length -1].year) +5)
-           .attr("y", yScale(countryData[countryData.length -1].value))
+           .attr("x", xScale(countryData[countryData.length -2].year) +5)
+           .attr("y", yScale(countryData[countryData.length -2].value)-5)
            .style("fill", color)
            .style("font-size","12px")
            .text(country);
