@@ -29,7 +29,7 @@ Visit our [project website](https://sneha1012.github.io/EDAV-FINAL-PROJECT/) to 
 - D3.js for interactive visualizations
 
 ## Contributors
-- Sneha Rawat
+- Sneha Maurya
 - Zubair Atha
 
 
