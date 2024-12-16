@@ -4,7 +4,7 @@ library(ggplot2)
 library(readr)
 
 # Load the Data
-data <- read_csv("/Users/snehamaurya/Desktop/Project-EDAV/cleaned_filtered.csv")
+data <- read_csv("../data/clean_filtered.csv")
 
 # Filter Relevant Columns and Remove Missing Values
 data_filtered <- data[!is.na(data$`International migrant stock: Both sexes (number)`), 
@@ -172,7 +172,7 @@ world <- ne_countries(scale = "medium", returnclass = "sf")
 
 
 # Load your data
-data <- read_csv("/Users/snehamaurya/Desktop/Project-EDAV/cleaned_filtered.csv")
+data <- read_csv("../data/clean_filtered.csv")
 
 data_clean <- data %>%
   select(`Region/Country/Area`, Year, `Asylum seekers, including pending cases (number)`) %>%
