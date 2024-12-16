@@ -9,7 +9,7 @@ output: html_notebook
 # Load necessary libraries
 library(ggplot2)
 library(readr)
-data <- read_csv("C:/Users/zubai/OneDrive/Desktop/Columbia/Assignments/EDAV/Project/cleaned_filtered.csv")
+data <- read_csv("../data/clean_filtered.csv")
 
 # Plot histogram with density overlay and improved theme
 ggplot(data, aes(x = `International migrant stock: Both sexes (% total population)`)) +
@@ -48,7 +48,7 @@ library(ggplot2)
 library(readr)
 
 # Read the data
-data <- read_csv("C:/Users/zubai/OneDrive/Desktop/Columbia/Assignments/EDAV/Project/cleaned_filtered.csv")
+data <- read_csv("../data/clean_filtered.csv")
 
 # Create Q-Q plot
 ggplot(data, aes(sample = `International migrant stock: Both sexes (% total population)`)) +
@@ -81,7 +81,7 @@ The Q-Q plot compares the distribution of international migrant stock to a theor
 library(readr)
 
 # Read the data
-data <- read_csv("C:/Users/zubai/OneDrive/Desktop/Columbia/Assignments/EDAV/Project/cleaned_filtered.csv")
+data <- read_csv("../data/clean_filtered.csv")
 
 # Remove NA values from the column
 migrant_stock <- na.omit(data$`International migrant stock: Both sexes (% total population)`)
@@ -103,7 +103,7 @@ library(readr)
 library(scales)  # For better axis formatting
 
 # Load the dataset
-data <- read_csv("C:/Users/zubai/OneDrive/Desktop/Columbia/Assignments/EDAV/Project/cleaned_filtered.csv")
+data <- read_csv("../data/clean_filtered.csv")
 
 # Convert columns to numeric (remove commas if present)
 data$`International migrant stock: Both sexes (number)` <- as.numeric(gsub(",", "", data$`International migrant stock: Both sexes (number)`))
@@ -151,7 +151,7 @@ library(dplyr)
 library(readr)
 
 # Load the dataset
-data <- read_csv("C:/Users/zubai/OneDrive/Desktop/Columbia/Assignments/EDAV/Project/cleaned_filtered.csv")
+data <- read_csv("../data/clean_filtered.csv")
 
 # Convert all character columns to UTF-8 encoding
 data <- data %>%
